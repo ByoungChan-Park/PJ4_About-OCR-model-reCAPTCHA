@@ -56,11 +56,11 @@ OCR Model을 학습시키며 모델의 작동원리를 이해하고,<br>
 
 ### **1. reCAPTCHA의 원리<br>**
 > 컴퓨터는 image안의 글자를 판별하지 못하고, image자체로 본다.<br><br>
-![](./images/com_think.png)
-<br>
-<br>
+![](./images/com_think.png)<br>
 ![](./images/com_think_real.png)
-0과 1을 처리하는 컴퓨터에게 비정형 데이터인 image는<br>
+
+0과 1을 처리하는 컴퓨터에게 비정형 데이터인 image는
+<br>
 **몇가지 글자를 품고 있던 상관 없이**<br>
 **"그림"** 이라는 한가지로 인식되기 때문에<br>
 학습된 모델이 내제되어 있지 않은 컴퓨터에게 reCAPTCHA란<br>
