@@ -106,12 +106,10 @@ RNN만으론 어디부터 어디까지 h인지 알 수 없기에<br>관계정렬
 #### **2.3　특징 추출 방법**
 > 조각 형식으로 파악하는 방법(filtering)<br><br>
 **기본 reCAPTCHA image를 filtering으로 파악하는 영상**
-![](./images/filtering_1.gif)
-<br>
-<br>
-좌측에서 우측으로 진행하기에 텍스트 하나에 집중되지 않고 전체적인 부분을 파악<br>(2의 윗부분 > b의 윗부분)<br><br>
+![](./images/filtering_1.gif)<br><br>
+좌측에서 우측으로 진행하기에 텍스트 하나에 집중되지 않고 전체적인 부분을 파악<br>(2의 윗부분 > b의 윗부분)<br><br><br>
 **기본 image를 우측으로 90º회전후 filtering하며 파악하는 영상**
-![](./images/filtering_2.gif)
+![](./images/filtering_2.gif)<br><br>
 좌측에서 우측으로 진행되는것은 같으나, image를 회전했기에 한 글자에 대해 충분히 파악 후 다음 글자로 이동<br>(2 > b) <br>
 
 <br>
@@ -125,8 +123,7 @@ RNN만으론 어디부터 어디까지 h인지 알 수 없기에<br>관계정렬
 #### **3.1　Horizon OCR model**
 > filtering 방법에 차별화를 위해 가로형태인<br>기본 reCAPTCHA image로 학습 진행 (horizontal_Image)<br><br>
 **시행 결과**
-![](./images/horizon_model_result.png)
-<br>
+![](./images/horizon_model_result.png)<br>
 **텍스트의 둥근 부분이 있을 시 최대한 매칭해 주려는 모습이나, 뒷배경에 있는 noise까지 텍스트로 반영하려는 모습이 식별되며, Unknown을 추출하기도 함.**
 <br>
 
@@ -135,8 +132,7 @@ RNN만으론 어디부터 어디까지 h인지 알 수 없기에<br>관계정렬
 #### **3.2　Original OCR Model**
 > 공식 OCR Model의 코드는 기본 image를 우측으로 90º회전 후<br>학습 진행 (Vertical_Image)<br><br>
 **시행 결과**
-![](./images/origin_model_result.png)
-<br>
+![](./images/origin_model_result.png)<br>
 **대부분의 image를 올바르게 유추**
 <br>
 
@@ -145,8 +141,7 @@ RNN만으론 어디부터 어디까지 h인지 알 수 없기에<br>관계정렬
 #### **3.3　Reverse OCR Model**
 > 세로형식이라는 결은 유지하여 filtering 방법을 통일하되,<br>image를 좌우 반전하여 학습 진행 (Vertical_inverted_Image)<br><br>
 **시행 결과**
-![](./images/reverse_model_result.png)
-<br>
+![](./images/reverse_model_result.png)<br>
 **대부분의 image를 올바르게 유추**
 <br>
 
