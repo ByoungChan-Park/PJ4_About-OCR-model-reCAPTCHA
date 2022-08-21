@@ -124,7 +124,7 @@ RNN만으론 어디부터 어디까지 h인지 알 수 없기에<br>관계정렬
 > filtering 방법에 차별화를 위해 가로형태인<br>기본 reCAPTCHA image로 학습 진행 (horizontal_Image)<br><br>
 **시행 결과**
 ![](./images/horizon_model_result.png)<br>
-**텍스트의 둥근 부분이 있을 시 최대한 매칭해 주려는 모습이나, 뒷배경에 있는 noise까지 텍스트로 반영하려는 모습이 식별되며, Unknown을 추출하기도 함.**
+**텍스트의 둥근 부분이 있을 시 최대한 매칭해 주려는 모습이나, 뒷배경에 있는 noise까지 텍스트로 반영하려는**<br>**모습이 식별되며, Unknown을 추출하기도 함.**
 <br>
 
 <br>
