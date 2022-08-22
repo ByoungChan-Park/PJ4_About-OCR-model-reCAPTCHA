@@ -1,8 +1,5 @@
 ## **OCR Model Review**<br>
 ## **(About reCAPTCHA)**
-<br>
-발표영상<br>
-https://www.youtube.com/watch?v=Tg0FYaTWCc4
 <br><br>
 
 #### 파일 설명
